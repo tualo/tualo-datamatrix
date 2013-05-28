@@ -18,11 +18,22 @@ Installation
 How to Use
 ==========
 
+From nodejs:
+
     var Datamatrix = require('tualo-datamatrix');
     var dm = new Datamatrix();
     var ascii = dm.getDigit('http://tualo.de',false);
     console.log(ascii);
-    
+
+In a Browser:
+
+    <script src="lib/datamatrix.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var dm = new Datamatrix();
+        var ascii = dm.getDigit('http://tualo.de',false);
+        console.log(ascii);
+    </script>
+
 The output will be:
 
     00000000000000000000
