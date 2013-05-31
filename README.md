@@ -20,7 +20,7 @@ How to Use
 
 From nodejs:
 
-    var Datamatrix = require('tualo-datamatrix');
+    var Datamatrix = require('tualo-datamatrix').Datamatrix;
     var dm = new Datamatrix();
     var ascii = dm.getDigit('http://tualo.de',false);
     console.log(ascii);
